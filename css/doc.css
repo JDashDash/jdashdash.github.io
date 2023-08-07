@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    color: #c5c5c5;
+    font-family: Corbel, serif;
+}
+
+.conteneur {
+    display: flex;
+    height: 100%;
+}
+
+.div-gauche {
+    flex: 1;
+    max-width: 20%;
+    background-color: #383838;
+    padding: 20px;
+}
+
+.div-droite {
+    flex: 1;
+    background-color: #212121;
+    padding: 20px;
+}
+
+.div-gauche h1 {
+    font-size: 35px;
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;;
+}
+
+.div-gauche h2 {
+    font-size: 22.5px;
+    background: linear-gradient(to right, #3299e1, #ff00f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;;
+}
+
+.doc_btn {
+    width: 80%;
+    padding: 7px;
+    background-color: #131313;
+    color: #06a9e0;
+    border-radius: 5px;
+    border: solid #131313;
+    margin-top: 5px;
+}
+
+.doc_btn:hover {
+    color: #dcdcdc;
+    font-weight: bold;
+}
+
+code {
+    background-color: #1c1c1c;
+    font-family: Monospace, serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #d2d2d2;
+}
+
+string_green
+{
+    color: #84cc33;
+}
+
+instruction_purple
+{
+    color: #9d4ae0;
+}
+
+instruction2_blue
+{
+    color: #0c6bc7;
+}
+
+value_orange
+{
+    color: #dc8b09;
+}
+
+a, a:hover {
+    color: red;
+    text-decoration: none;
+}
+a:hover {
+    color: #940101;
+}
