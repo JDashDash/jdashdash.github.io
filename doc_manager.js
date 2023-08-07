@@ -38,9 +38,9 @@ const contentRight = {
         "- <code>VALUE</code> is your value you have to give between these operators (we will speak about values later) <br>" +
         "- <code>;</code> is the final operator to conclude your instruction <br><br><br><br>" +
         "To explain what's the difference, I will show you an example: <br>" +
-        "<code>print(\"Hello World \n\");</code><br>" +
+        "<code>print(\"Hello World \\n\");</code><br>" +
         "<code>println(\"Hello World\");</code><br>" +
-        "If you do not know why there is '\n' in the instruction, it to go to the next line, it's a jump in strings. We will speak about it later." +
+        "If you do not know why there is '\\n' in the instruction, it to go to the next line, it's a jump in strings. We will speak about it later." +
         "</p>",
 };
 
