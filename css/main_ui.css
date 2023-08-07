@@ -1,6 +1,6 @@
 body {
     background-color: #343434;
-    color: #d3d3d3;
+    color: #c5c5c5;
     font-family: Corbel, serif;
 }
 
@@ -8,10 +8,16 @@ body {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .menu a {
-    color: white;
+    color: #e3e3e3;
     text-decoration: none;
     font-size: 30px;
     padding: 15px;
@@ -25,7 +31,6 @@ body {
 .bloc {
     font-size: 17px;
     background-color: #262626;
-    color: #d3d3d3;
     padding: 10px;
     border-radius: 5px;
 }
@@ -35,8 +40,16 @@ body {
     text-align: center;
 }
 
+.big-separator {
+    height: 150px;
+}
+
 .separator {
     height: 100px;
+}
+
+.semi-separator {
+    height: 50px;
 }
 
 logo_texte {
@@ -52,10 +65,41 @@ logo_texte {
     padding-left: 50px;
 }
 
-code {
+code, .code_bloc {
     background-color: #1c1c1c;
-    color: #f3f3f3;
     font-family: Monospace, serif;
     padding-left: 5px;
     padding-right: 5px;
+    color: #d2d2d2;
+}
+
+.code_bloc {
+    padding: 10px;
+}
+
+footer {
+    background-color: #171717;
+    padding: 10px;
+    text-align: center;
+    width: 99%;
+}
+
+string_green
+{
+    color: #84cc33;
+}
+
+instruction_purple
+{
+    color: #9d4ae0;
+}
+
+instruction2_blue
+{
+    color: #0c6bc7;
+}
+
+number_orange
+{
+    color: #dc8b09;
 }
