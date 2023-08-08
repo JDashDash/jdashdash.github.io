@@ -21,10 +21,11 @@ const loopsButton = document.getElementById('loops');
 const contentRight = {
     start: "<p>J-- (J Dash Dash) is an interpreted, non-object-oriented programming language inspired by the C++ language and the very famous Java.<br>" +
         "To start, you have to download the interpreter: <a href=\"https://github.com/JDashDash/J--\">https://github.com/JDashDash/J--</a><br><br>" +
-        "The interpreter is the tool that will check your code and do actions, it depends on what you are asking in it.<br><br>" +
-        "Once you downloaded it, you can now code in J-- ! To interprete your code, you have to open a terminal, call the interpreter with the path to the file with the extension <code>.jdd</code>" +
+        "The interpreter is the tool that will check your code and do actions it depends on what you are asking for it.<br><br>" +
+        "Once you downloaded it, you can now code in J--! To interprete your code, you have to open a terminal, " +
+        "call the interpreter with the path to the file with the extension <code>.jdd</code>" +
         "</p>",
-    print: "<p>In J-- there is two style of print : <instruction2_blue>print</instruction2_blue> and <instruction2_blue>println</instruction2_blue>. We will start with print:" +
+    print: "<p>In J-- there are two styles of print : <instruction2_blue>print</instruction2_blue> and <instruction2_blue>println</instruction2_blue>. We will start with print:" +
         "<pre>" +
         "<code><instruction2_blue>print</instruction2_blue> ( <value_orange>VALUE</value_orange> ) ; </code>" +
         "</pre>" +
@@ -40,7 +41,37 @@ const contentRight = {
         "To explain what's the difference, I will show you an example: <br>" +
         "<code>print(\"Hello World \\n\");</code><br>" +
         "<code>println(\"Hello World\");</code><br>" +
-        "If you do not know why there is '\\n' in the instruction, it to go to the next line, it's a jump in strings. We will speak about it later." +
+        "If you do not know why there is '\\n' in the instruction, it to go to the next line, it's a jump in strings. We will speak about it later.<br><br>" +
+        "The print instructions are a way to show an output in your terminal. In J-- you can give a string, double, int " +
+        "or a boolean value (it can come from a variable, return value from a function or a classic value like in the example)." +
+        "</p>",
+    types: "<p>" +
+        "In J--, there is four types: <code>int</code>, <code>double</code>, <code>string</code>, <code>boolean</code>.<br>" +
+        "A type in a programming language gives information about the value that it expects. For example, if you want something with an int in a case, we specify we are waiting an int in return. <br>" +
+        "In this programming language, you have to give a type for a function or a variable. You'll see it later. <br>" +
+        "By the way, in the language you can see modules, but it will be for next courses :)." +
+        "</p>",
+    vars: "<p>" +
+        "A variable is saved in your memory, it contains a name and a value. We can use and change it with the name given. <br>" +
+        "In J--, a variable can have a lot of states: not mutable, protected, private, public or normal. <br>" +
+        "In this course, we will speak about const and normal variables. We will speak about protected, private and public later. <br> <br>" +
+        "Format: <br>" +
+        "<pre>" +
+        "<code><instruction2_blue>TYPE</instruction2_blue> NAME = <value_orange>VALUE</value_orange> ;</code> <br>" +
+        "- <code>TYPE</code> is the type you give to your variable, it's important to say what you expect in her value. <br>" +
+        "- <code>NAME</code> is the name of your variable, no space or number in the name! If you want to add a space, use <code>_</code> and for numbers, tell it in letter. <br>" +
+        "- <code>=</code> is an operator to introduce the value of your variable. <br>" +
+        "- <code>VALUE</code> is the value saved in your variable and in your memory, the value have to correct, it means the type of your value have to be equal to the type of the variable. <br>" +
+        "- <code>;</code> is the final operator to conclude your instruction <br><br><br><br>" +
+        "</pre>" +
+        "Examples:" +
+        "<pre>" +
+        "<code><instruction2_blue>int</instruction2_blue> anIntVar = <value_orange>15</value_orange>;</code> <br>" +
+        "<code><instruction2_blue>double</instruction2_blue> aDoubleVar = <value_orange>2.5</value_orange>;</code> <br>" +
+        "<code><instruction2_blue>string</instruction2_blue> aStringVar = <value_orange>\"Hello I am a message saved in a string\"</value_orange>;</code> <br>" +
+        "<code><instruction2_blue>boolean</instruction2_blue> aBoolOrBooleanVar = <value_orange>true</value_orange>;</code> <br>" +
+        "<code><instruction2_blue>boolean</instruction2_blue> anotherBoolOrBooleanVar = <value_orange>false</value_orange>;</code> <br>" +
+        "</pre>" +
         "</p>",
 };
 
@@ -53,5 +84,17 @@ startButton.addEventListener('click', function() {
 printButton.addEventListener('click', function() {
     divGauche.style.display = 'block';
     divDroite.innerHTML = contentRight.print;
+    divDroite.style.display = 'block';
+});
+
+typesButton.addEventListener('click', function() {
+    divGauche.style.display = 'block';
+    divDroite.innerHTML = contentRight.types;
+    divDroite.style.display = 'block';
+});
+
+varsButton.addEventListener('click', function() {
+    divGauche.style.display = 'block';
+    divDroite.innerHTML = contentRight.vars;
     divDroite.style.display = 'block';
 });
