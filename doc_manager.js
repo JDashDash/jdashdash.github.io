@@ -62,16 +62,31 @@ const contentRight = {
         "- <code>NAME</code> is the name of your variable, no space or number in the name! If you want to add a space, use <code>_</code> and for numbers, tell it in letter. <br>" +
         "- <code>=</code> is an operator to introduce the value of your variable. <br>" +
         "- <code>VALUE</code> is the value saved in your variable and in your memory, the value have to correct, it means the type of your value have to be equal to the type of the variable. <br>" +
-        "- <code>;</code> is the final operator to conclude your instruction <br><br><br><br>" +
-        "</pre>" +
+        "- <code>;</code> is the final operator to conclude your instruction<br>" +
+        "</pre><br><br><br><br>" +
         "Examples:" +
         "<pre>" +
         "<code><instruction2_blue>int</instruction2_blue> anIntVar = <value_orange>15</value_orange>;</code> <br>" +
         "<code><instruction2_blue>double</instruction2_blue> aDoubleVar = <value_orange>2.5</value_orange>;</code> <br>" +
         "<code><instruction2_blue>string</instruction2_blue> aStringVar = <value_orange>\"Hello I am a message saved in a string\"</value_orange>;</code> <br>" +
         "<code><instruction2_blue>boolean</instruction2_blue> aBoolOrBooleanVar = <value_orange>true</value_orange>;</code> <br>" +
-        "<code><instruction2_blue>boolean</instruction2_blue> anotherBoolOrBooleanVar = <value_orange>false</value_orange>;</code> <br>" +
+        "<code><instruction2_blue>boolean</instruction2_blue> anotherBoolOrBooleanVar = <value_orange>false</value_orange>;</code><br>" +
+        "</pre><br><br>" +
+        "By the way you can change the value of your variable like this:" +
+        "<pre>" +
+        "<code>anIntVar = <value_orange>0</value_orange></code>" +
+        "</pre><br>" +
+        "To check the value of your variable, you can use print instructions:" +
+        "<pre>" +
+        "<code>print(aDoubleVar);</code>" +
         "</pre>" +
+        "<pre>" +
+        "<code>println(<value_orange>\"The value of the variable is \" </value_orange>aBoolOrBooleanVar); </code>" +
+        "</pre><br>" +
+        "Let's speak about const variables. In this case, you can not change the value of your variable. To declare a variable like this, it's like before, but you have to specify as first argument <code>final</code>:" +
+        "<pre>" +
+        "<code><instruction_purple>final </instruction_purple><instruction2_blue>int</instruction2_blue> anSecondIntVar = <value_orange>5</value_orange>;</code>" +
+        "</pre><br><br><br>" +
         "</p>",
 };
 
