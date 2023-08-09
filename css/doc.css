@@ -10,17 +10,19 @@ html, body {
     height: 100%;
 }
 
-.div-gauche {
+.div-droite, .div-gauche {
     flex: 1;
-    max-width: 20%;
-    background-color: #383838;
     padding: 20px;
 }
 
+.div-gauche {
+    max-width: 20%;
+    background-color: #383838;
+
+}
 .div-droite {
-    flex: 1;
+    overflow-y: auto;
     background-color: #212121;
-    padding: 20px;
 }
 
 .div-gauche h1 {
