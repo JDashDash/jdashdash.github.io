@@ -43,7 +43,17 @@ const contentRight = {
         "<code>println(\"Hello World\");</code><br>" +
         "If you do not know why there is '\\n' in the instruction, it to go to the next line, it's a jump in strings. We will speak about it later.<br><br>" +
         "The print instructions are a way to show an output in your terminal. In J-- you can give a string, double, int " +
-        "or a boolean value (it can come from a variable, return value from a function or a classic value like in the example)." +
+        "or a boolean value (it can come from a variable, return value from a function or a classic value like in the example).<br><br>" +
+        "To conclude, you have to know it's possible to print multiple values in one and only one print instruction, let me show you an example: <br>" +
+        "<pre>" +
+        "<code><instruction2_blue>println</instruction2_blue> ( <value_orange>\"Hello I am here to \"</value_orange>  " +
+        "<value_orange>\"explain to you how\"</value_orange> <value_orange>\" it works !!! \"</value_orange>) ; </code>" +
+        "</pre> As you can see, you can add a lot of values, there is no limit! By the way in a lot of programming languages, " +
+        "we use <code>+</code> to add another value, you can as well : <br>" +
+        "<pre>" +
+        "<code><instruction2_blue>println</instruction2_blue> ( <value_orange>\"Hello I am here to \"</value_orange> + " +
+        "<value_orange>\"explain to you how\"</value_orange> + <value_orange>\" it works !!! \"</value_orange>) ; </code>" +
+        "</pre> " +
         "</p>",
     types: "<p>" +
         "In J--, there is four types: <code>int</code>, <code>double</code>, <code>string</code>, <code>boolean</code>.<br>" +
@@ -63,7 +73,7 @@ const contentRight = {
         "- <code>=</code> is an operator to introduce the value of your variable. <br>" +
         "- <code>VALUE</code> is the value saved in your variable and in your memory, the value have to correct, it means the type of your value have to be equal to the type of the variable. <br>" +
         "- <code>;</code> is the final operator to conclude your instruction<br>" +
-        "</pre><br><br><br><br>" +
+        "</pre>" +
         "Examples:" +
         "<pre>" +
         "<code><instruction2_blue>int</instruction2_blue> anIntVar = <value_orange>15</value_orange>;</code> <br>" +
@@ -86,7 +96,41 @@ const contentRight = {
         "Let's speak about const variables. In this case, you can not change the value of your variable. To declare a variable like this, it's like before, but you have to specify as first argument <code>final</code>:" +
         "<pre>" +
         "<code><instruction_purple>final </instruction_purple><instruction2_blue>int</instruction2_blue> anSecondIntVar = <value_orange>5</value_orange>;</code>" +
-        "</pre><br><br><br>" +
+        "</pre>" +
+        "To conclude, we will speak about operations on your variable and references. A variable declared as a reference in J-- is like a pointer/reference in C++. " +
+        "You have a variable which has a value, and you give a link to a second; like this, the first and second are equal in any case. " +
+        "If you change the value of any variable, the two variables will change. Example: <br>" +
+        "<pre>" +
+        "<code><instruction2_blue>int</instruction2_blue> x = <value_orange>5</value_orange>;</code><br>" +
+        "<code><instruction2_blue>int</instruction2_blue> y = x:reference;</code><br>" +
+        "<code><instruction2_blue>println</instruction2_blue>(x <value_orange>\", \"</value_orange> y);</code><br>" +
+        "<code>y = <value_orange>25</value_orange>;</code><br>" +
+        "<code><instruction2_blue>println</instruction2_blue>(x <value_orange>\", \"</value_orange> y);</code><br>" +
+        "</pre> In this case, at the end <code>x</code> and <code>y</code> have the same value, so 25.<br>" +
+        "Now let's speak about operations on variable. It's only possible on <code>int</code>, <code>double</code> or <code>string</code> values. <br>" +
+        "You can add or substract with <code>+=</code> to add or <code>+=</code> to substract. Example : " +
+        "<pre>" +
+        "<code><instruction2_blue>int</instruction2_blue> z = <value_orange>10</value_orange>;</code><br>" +
+        "<code><instruction2_blue>println</instruction2_blue>(z);</code><br>" +
+        "<code>z += <value_orange>5</value_orange>;</code><br>" +
+        "<code><instruction2_blue>println</instruction2_blue>(z);</code><br>" +
+        "</pre>Output: <br>10<br>15<br><br>" +
+        "<pre>" +
+        "<code><instruction2_blue>double</instruction2_blue> d = <value_orange>10.3</value_orange>;</code><br>" +
+        "<code><instruction2_blue>println</instruction2_blue>(d);</code><br>" +
+        "<code>d -= <value_orange>5.7</value_orange>;</code><br>" +
+        "<code><instruction2_blue>println</instruction2_blue>(d);</code><br>" +
+        "</pre>Output: <br>10.3<br>4.6<br><br>" +
+        "<code><instruction2_blue>string</instruction2_blue> ss = <value_orange>\"Hello \"</value_orange>;</code><br>" +
+        "<code><instruction2_blue>println</instruction2_blue>(ss);</code><br>" +
+        "<code>ss += <value_orange>\"World\"</value_orange>;</code><br>" +
+        "<code><instruction2_blue>println</instruction2_blue>(ss);</code><br>" +
+        "</pre>Output: <br>Hello<br>Hello World<br><br>" +
+        "<code><instruction2_blue>string</instruction2_blue> ss = <value_orange>\"Hello World\"</value_orange>;</code><br>" +
+        "<code><instruction2_blue>println</instruction2_blue>(ss);</code><br>" +
+        "<code>ss -= <value_orange>\"World\"</value_orange>;</code><br>" +
+        "<code><instruction2_blue>println</instruction2_blue>(ss);</code><br>" +
+        "</pre>Output: <br>Hello World<br>Hello<br><br>" +
         "</p>",
 };
 
